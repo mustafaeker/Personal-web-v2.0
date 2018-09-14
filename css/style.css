@@ -277,15 +277,14 @@ color: #333333;
     padding-bottom: 100px;
 }
 
-#portfolio-inner button {
+.thumb {
     width: 30%;
     min-width: 300px;
     display: inline-block;
     background-color:#f9f6f6;
 
 }
-#portfolio-inner button img{
-    
+.thumb-image{
     width: 100%;
 
 }
