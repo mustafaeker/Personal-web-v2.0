@@ -257,7 +257,8 @@
 </div>
 </div>
 <!----------------------------------------------------------->
-                <!--Content-Portfolio-->
+               
+                    <!--Content-Portfolio-->
             
 <div id="Portfolio" class="section-wrapper-odd">
 <div class="section-header">
@@ -280,7 +281,9 @@
 </div>
 </div>
             
-<!----------------------------------------------------------->                  <!--Content-Experience-->
+<!-----------------------------------------------------------> 
+                           
+                    <!--Content-Experience-->
             
 <div id="Experience" class="section-wrapper-even">
 <div class="section-header">
@@ -299,11 +302,11 @@
                 v-bind:description="exp.description"
                 ></experience>    
 </div>   
-</div>     
-            
+</div>                 
 <!-----------------------------------------------------------> 
-                <!--Content-Education-->
-            
+               
+                    <!--Content-Education-->  
+                              
 <div id="Education" class="section-wrapper-odd">
     <div class="section-header">
         <h2 class="headline "><ion-icon class="icons" name="ios-school">
@@ -323,7 +326,9 @@
 </div>
     
 <!-----------------------------------------------------------> 
-        <!--Content-Certificates-->
+               
+                    <!--Content-Certificates-->
+                    
 <div id="Certificates" class="section-wrapper-even">
     <div class="section-header">
         <h2 class="headline ">
@@ -331,153 +336,53 @@
             <ion-icon class="icons" name="ios-ribbon"></ion-icon>
             <p><span class="text">Certificates</span></p>
         </h2>
- 
-<!-- Certificate 1 --->
-<div class="row justify-content-md-center">
-        <div class="col-6 text-right p-2 ">
-            <p class="mb-1 p-0"><strong>Udemy</strong><br>07/2018<br>
-                <em>Licence: UC-QXW4MG9N</em></p>
-        </div>
-        <div class="col-6 text-left p-2 ">
-            <p class="mb-1 p-0">Komple Sıfırdan Adım Adım Javascript Öğrenin</p>
-            <a class="cert-link" href="https://www.udemy.com/certificate/UC-QXW4MG9N/" >
-            <p class="m-0 p-0">View Licence...</p></a>
-        </div>
-</div>
- <div>
-        <p class="text-muted text-justify"><small></small></p>  
-      </div>
-<!-------------->
-<!-- Certificate 2 --->
-<div class="row justify-content-md-center">
-        <div class="col-6 text-right p-2 ">
-            <p class="mb-1 p-0"><strong>Udemy</strong><br>06/2018<br>
-                <em>Licence: UC-Q21DNL7A</em></p>
-        </div>
-        <div class="col-6 text-left p-2 ">
-            <p class="mb-1 p-0">Web Geliştiricisi Olmanın Temelleri</p>
-            <a class="cert-link" href="https://www.udemy.com/certificate/UC-Q21DNL7A/" >
-            <p class="m-0 p-0">View Licence...</p></a>
-        </div>
-</div>
- <div>
-        <p class="text-muted text-justify"><small></small></p>  
-      </div>
-<!-------------->
-<!-- Certificate 3 --->
-<div class="row justify-content-md-center">
-        <div class="col-6 text-right p-2 ">
-            <p class="mb-1 p-0"><strong>bilgeis.net</strong><br>06/2018<br>
-                <em>Licence: c7c332a0-7ab1-11e8-8ac1-2bf7a4cef6b0</em></p>
-        </div>
-        <div class="col-6 text-left p-2 ">
-            <p class="mb-1 p-0">Programlamanın Temelleri</p>
-            <a class="cert-link" href="https://bilgeis.net/moodle/mod/simplecertificate/view.php?id=2508&tab=0&page=0&perpage=30&orderby=username&action=get" >
-            <p class="m-0 p-0">View Licence...</p></a>
-        </div>
-</div>
- <div>
-        <p class="text-muted text-justify"><small></small></p>  
-      </div>
-<!-------------->
-<!-- Certificate 4 --->
-<div class="row justify-content-md-center">
-        <div class="col-6 text-right p-2 ">
-            <p class="mb-1 p-0"><strong>Başarsoft</strong><br>03/2012<br>
-                <em></em></p>
-        </div>
-        <div class="col-6 text-left p-2 ">
-            <p class="mb-1 p-0">Mapinfo Professional Essential & Advanced Degree Trainin</p>
-            <a class="cert-link" href="" >
-            <p class="m-0 p-0"> </p></a>
-        </div>
-</div>
- <div>
-        <p class="text-muted text-justify"><small></small></p>  
-      </div>
-<!-------------->
 
+      <certificate
+      v-for="cert in certs"      
+      v-bind:key="cert.id"
+      v-bind:inst="cert.inst"
+      v-bind:date="cert.date"
+      v-bind:licence="cert.licence"
+      v-bind:name="cert.name"
+      v-bind:link="cert.link"
+      ></certificate> 
 
-    </div>
-</div>
-
-        <!--Content-Awards-->
+      </div>
+</div>          
+<!-----------------------------------------------------------> 
+               
+                    <!--Content-Awards-->
+                    
 <div id="Awards" class="section-wrapper-odd">
     <div class="section-header">
         <h2 class="headline ">
             <ion-icon class="icons" name="ios-trophy"></ion-icon>
             <p><span class="text">Awards</span></p>
         </h2>
-<!-- Award 1--->
-<div class="container my-5">
-<h4><strong>1st Place</strong></h4>
-<div class="row justify-content-center">
-    <div class="col-4 text-right p-2 ">
-        <p class="m-0 p-0">Gate Ms. Program<br><em>01/2013</em></p>
-    </div>
-    <div class="col-4 text-left pt-2 ">
-        <p class="mb-1 p-0">Gateway 2013 Game Development Competition</p>
-    </div>
-</div>
-<div class="row justify-content-md-center">
-    <div class="col text-center ">
-        <p class="text-muted text-center m-0"><small>PC Game - Alaturka Karting</small></p>    
-    </div>
-</div>
-<div>
-    <a class="cert-link" href="http://gate.ii.metu.edu.tr/tr/gateway-0" >GATEWay 2013</a>
-</div>
-</div>
-<!------------->
-<!-- Award 2--->
-<div class="container my-5">
-        <h4><strong>3rd Place</strong></h4>
-        <div class="row justify-content-center">
-            <div class="col-4 text-right p-2 ">
-                <p class="m-0 p-0">TMMOB<br><em>06/2008</em></p>
-            </div>
-            <div class="col-4 text-left pt-2 ">
-                <p class="mb-1 p-0">Zonguldak Lavuar Alanı Değerlendirme Projesi Ulusal Fikir Yarışması</p>
-            </div>
-        </div>
-        <div>
-            <a class="cert-link" href="http://v3.arkitera.com/y779-kent-dusleri---3-zonguldak-merkez-lavuar-alani-degerlendirme-projesi.html" >Winners List</a>
-        </div>
-</div>
-<!------------->
-<!-- Award 3--->
-<div class="container my-5">
-        <h4><strong>Mention</strong></h4>
-        <div class="row justify-content-center">
-            <div class="col-4 text-right p-2 ">
-                <p class="m-0 p-0">METU (Faculty of Arch.)<br><em>12/2007</em></p>
-            </div>
-            <div class="col-4 text-left pt-2 ">
-                <p class="mb-1 p-0">Mimarlık Fakültesi - Kuzey Avlu Tasarimi Projesi</p>
-            </div>
-        </div>
-</div>
-<!------------->
-<!-- Award 4--->
-<div class="container my-5">
-        <h4><strong>2nd Place</strong></h4>
-        <div class="row justify-content-center">
-            <div class="col-4 text-right p-2 ">
-                <p class="m-0 p-0">TMMOB<br><em>11/2007</em></p>
-            </div>
-            <div class="col-4 text-left pt-2 ">
-                <p class="mb-1 p-0">Hasanoğlan Y. Köy Enstitüsü Değerlendirme Projesi Ulusal Fikir Yarışması</p>
-            </div>
-        </div>
-        <div>
-            <a class="cert-link" href="http://v3.arkitera.com/y779-kent-dusleri---3-zonguldak-merkez-lavuar-alani-degerlendirme-projesi.html" >Winners List</a>
-        </div>
-</div>
-<!------------->
-    </div>
-</div>
+        
 
-        <!--Content-Interests-->
+      <award
+      v-for="award in awards"      
+      v-bind:key="award.id"
+      v-bind:degree="award.degree"
+      v-bind:inst="award.inst"
+      v-bind:date="award.date"
+      v-bind:name="award.name"
+      v-bind:subtitle="award.subtitle"
+      v-bind:page="award.page"
+      v-bind:pagedesc="award.pagedesc"
+      v-bind:link="award.link"
+      v-bind:linkdesc="award.linkdesc"
+      v-bind:info="award.info"
+      ></award>         
+        
+     </div>
+</div>       
+        
+<!----------------------------------------------------------->   
+                
+                    <!--Content-Interests-->
+                 
 <div id="Interests" class="section-wrapper-even">
     <div class="section-header">
         <h2 class="headline ">
@@ -504,8 +409,11 @@
     </div>
 </div>
 </div>
-      
-        <!--Content-Contact-->
+         
+<!-----------------------------------------------------------> 
+                   
+                  <!--Content-Contact-->
+                  
 <div id="Contact" class="section-wrapper-odd">
     <div class="section-header">
         <h2 class="headline ">
@@ -531,7 +439,11 @@
 </div>
 </div>
 
-<!----  FOOTER  -->
+<!----------------------------------------------------------->
+</div>
+</div>
+
+<!----------------------- FOOTER  --------------------------->
 
 <footer>
 
@@ -543,22 +455,18 @@
              </div>
          </div>
      </footer>
+     
+<!----------------------------------------------------------->
 
 
-
-
-
-                    </div>
-
-                    </div>
-
-
+<!----------------------- SCRIPTS  --------------------------->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.js" ></script>
     <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
     <script src="scripts/Vues.js"></script>
-                    <script>
+    
+<script>
                         
                         // Select all links with hashes
 $('a[href*="#"]')

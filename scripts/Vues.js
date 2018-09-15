@@ -286,7 +286,147 @@ data: {
 
 /***********************************************************/
 
+Vue.component('certificate', {
+    
+props: ['inst','date', 'licence', 'name', 'link'],
+    
+template:`
+<div class="row justify-content-md-center">
+        <div class="col-6 text-right p-2 ">
+            <p class="mb-1 p-0"><strong>{{inst}}</strong><br>{{date}}<br>
+            <em>{{licence}}</em></p>
+        </div>
+        <div class="col-6 text-left p-2 ">
+            <p class="mb-1 p-0">{{name}}</p>
+            <a class="cert-link" :href="link">
+            <p class="m-0 p-0">View Licence...</p></a>
+        </div>
+</div>
+`
+ });
 
+new Vue({
+el:'#Certificates',
+data: {
+    certs:[
+        { id: 1, 
+         inst:'Udemy', 
+         date:'07/2018', 
+         licence:'Licence: UC-QXW4MG9N', 
+         name:'Komple Sıfırdan Adım Adım Javascript Öğrenin', 
+         link:'https://www.udemy.com/certificate/UC-QXW4MG9N/'},
+        
+        { id: 2, 
+         inst:'Udemy', 
+         date:'06/2018', 
+         licence:'Licence: c7c332a0-7ab1-11e8-8ac1-2bf7a4cef6b0', 
+         name:'Programlamanın Temelleri',          link:'https://bilgeis.net/moodle/mod/simplecertificate/view.php?id=2508&tab=0&page=0&perpage=30&orderby=username&action=get'},
+        
+        { id: 3, 
+         inst:'Udemy', 
+         date:'06/2018', 
+         licence:'Licence: UC-Q21DNL7A', 
+         name:'Web Geliştiricisi Olmanın Temelleri', 
+         link:'https://www.udemy.com/certificate/UC-Q21DNL7A/'},
+        
+        { id: 4, 
+         inst:'Başarsoft', 
+         date:'03/2012', 
+         licence:'Licence: ', 
+         name:'Mapinfo Professional Essential & Advanced Degree Training', 
+         link:' '},
+             ]
 
+}
+});
 
+/***********************************************************/
+
+Vue.component('award', {
+    
+props: ['degree','inst','date', 'name', 'subtitle', 'link', 'linkdesc', 'page', 'pagedesc','info'],
+    
+template:`
+<div class="container my-5">
+<h4><strong>{{degree}}</strong></h4>
+        <p class="text-muted text-center m-0"><small>{{subtitle}}</small></p> 
+        <a class="cert-link" :href="page" >{{pagedesc}}</a>
+    <div class="row justify-content-center">
+        <div class="col-4 text-right p-2 ">
+            <p class="m-0 p-0">{{inst}}<br><em>{{date}}</em></p>
+        </div>
+        <div class="col-4 text-left pt-2 ">
+            <p class="mb-1 p-0">{{name}}</p>
+        </div>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col text-center ">
+            <a class="cert-link" :href="link" >{{linkdesc}}</a>
+            <p class="text-muted text-center m-0"><small>{{info}}</small></p> 
+        </div>
+    </div>
+</div>
+`
+ });
+
+new Vue({
+el:'#Awards',
+data: {
+    awards:[
+        {id: 1, 
+         degree:'1st Place',
+         inst:'Gate Ms. Program', 
+         date:'01/2013', 
+         name:'Gateway 2013 Game Development Competition', 
+         subtitle:'PC Game - Alaturka Karting', 
+         page:'#', 
+         pagedesc:"Visit Game's Page", 
+         link:'http://gate.ii.metu.edu.tr/tr/gateway-0', 
+         linkdesc:'GATEWay 2013', 
+         info:' '
+        },
+        
+        {id: 2, 
+         degree:'3rd Place',
+         inst:'TMMOB', 
+         date:'06/2008', 
+         name:'Zonguldak Lavuar Alanı Değerlendirme Projesi Ulusal Fikir Yarışması', 
+         page:'#', 
+         pagedesc:"View Project", 
+         subtitle:'Zonguldak Gençlik Merkezi ve Kent Müzesi', 
+         link:'http://v3.arkitera.com/y779-kent-dusleri---3-zonguldak-merkez-lavuar-alani-degerlendirme-projesi.html', 
+         linkdesc:'Winners List', 
+         info:' '
+        },
+        
+        
+        {id: 3, 
+         degree:'Mention',
+         inst:'METU (Faculty of Arch.)', 
+         date:'12/2007', 
+         name:'Mimarlık Fakültesi - Kuzey Avlu Tasarimi Projesi', 
+         page:'#', 
+         pagedesc:"View Project",  
+         subtitle:'Kuzey Avlu Japon Bahçesi', 
+         link:' ', 
+         linkdesc:'', 
+         info:'Copmpetition Link Removed by Instution '
+        },
+        
+        {id: 4, 
+         degree:'2nd Place',
+         inst:'TMMOB', 
+         date:'11/2007', 
+         name:'Hasanoğlan Y. Köy Enstitüsü Değerlendirme Projesi Ulusal Fikir Yarışması', 
+         page:'#', 
+         pagedesc:"View Project",  
+         subtitle:'Hasanoğlan Eğitim Yerleşkesi', 
+         link:'http://v3.arkitera.com/y779-kent-dusleri---3-zonguldak-merkez-lavuar-alani-degerlendirme-projesi.html', 
+         linkdesc:'Winners List', 
+         info:' '
+        },
+             ]
+
+}
+});
 
