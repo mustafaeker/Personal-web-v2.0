@@ -1,4 +1,4 @@
-  
+ 
 
 Vue.component('tools', {
     
@@ -39,9 +39,8 @@ template:`<div class="thumb">
             <button  type="button"  class="btn" data-toggle="modal" :data-target="'#port-img-'+no" style="background-color:#f9f6f6; padding:5px">
                 <img class="thumb-image" :src="'img/gallery/'+no+'.jpg'">
             </button>
-
             <div class="modal fade" :id="'port-img-'+no" role="dialog">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header" style="color:#333333">
                             <h4 class="modal-title" >{{ name }}
@@ -50,6 +49,7 @@ template:`<div class="thumb">
                         </div>
                         <div class="modal-body">
                             <img :src="'img/gallery/'+no+'.jpg'" style="width: 100%">
+							
                         </div>
                     </div>
                 </div>
@@ -81,6 +81,16 @@ data: {
         { id: 18, name: 'NameHere', description: 'DescriptionHere'},
         { id: 19, name: 'NameHere', description: 'DescriptionHere'},
         { id: 20, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 21, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 22, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 23, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 24, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 25, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 26, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 27, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 28, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 29, name: 'NameHere', description: 'DescriptionHere'},
+        { id: 30, name: 'NameHere', description: 'DescriptionHere'},
              ]
 
 }
@@ -429,4 +439,3 @@ data: {
 
 }
 });
-
