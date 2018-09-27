@@ -380,7 +380,7 @@ template:`
 <div class="container my-5">
 <h4><strong>{{degree}}</strong></h4>
         <p class="text-muted text-center m-0"><small>{{subtitle}}</small></p> 
-        <a class="cert-link" :href="page" >{{pagedesc}}</a>
+        <a class="cert-link" :href="page" target="_blank">{{pagedesc}}</a>
     <div class="row justify-content-center">
         <div class="col-4 text-right p-2 ">
             <p class="m-0 p-0">{{inst}}<br><em>{{date}}</em></p>
@@ -409,8 +409,8 @@ data: {
          date:'01/2013', 
          name:'Gateway 2013 Game Development Competition', 
          subtitle:'PC Game - Alaturka Karting', 
-         page:'#', 
-         pagedesc:"Visit Game's Page", 
+         page:'https://vimeo.com/57916107', 
+         pagedesc:"Watch Game's Trailer", 
          link:'http://gate.ii.metu.edu.tr/tr/gateway-0', 
          linkdesc:'GATEWay 2013', 
          info:' '
@@ -421,7 +421,7 @@ data: {
          inst:'TMMOB', 
          date:'06/2008', 
          name:'Zonguldak Lavuar Alanı Değerlendirme Projesi Ulusal Fikir Yarışması', 
-         page:'#', 
+         page:'www.mustafaeker.com/zonguldak.html', 
          pagedesc:"View Project", 
          subtitle:'Zonguldak Gençlik Merkezi ve Kent Müzesi', 
          link:'http://v3.arkitera.com/y779-kent-dusleri---3-zonguldak-merkez-lavuar-alani-degerlendirme-projesi.html', 
@@ -435,7 +435,7 @@ data: {
          inst:'METU (Faculty of Arch.)', 
          date:'12/2007', 
          name:'Mimarlık Fakültesi - Kuzey Avlu Tasarimi Projesi', 
-         page:'#', 
+         page:'www.mustafaeker.com/avlu.html',
          pagedesc:"View Project",  
          subtitle:'Kuzey Avlu Japon Bahçesi', 
          link:' ', 
@@ -448,7 +448,7 @@ data: {
          inst:'TMMOB', 
          date:'11/2007', 
          name:'Hasanoğlan Y. Köy Enstitüsü Değerlendirme Projesi Ulusal Fikir Yarışması', 
-         page:'#', 
+         page:'www.mustafaeker.com/hasanoglan.html',
          pagedesc:"View Project",  
          subtitle:'Hasanoğlan Eğitim Yerleşkesi', 
          link:'http://v3.arkitera.com/y779-kent-dusleri---3-zonguldak-merkez-lavuar-alani-degerlendirme-projesi.html', 
